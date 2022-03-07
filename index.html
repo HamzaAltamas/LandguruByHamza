@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="plugin css/all.min.css">
+    <link rel="stylesheet" href="plugin css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugin css/slick.css">
+    <link rel="stylesheet" href="plugin css/animate.css">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="plugin css/venobox.min.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>LandGuru</title>
+</head>
+
+<body>
+      <!-- preloader start -->
+
+  <div class="preloader js-preloader">
+
+    <div class="gif col-lg-6">
+        <img src="https://cdn.dribbble.com/users/3182781/screenshots/6974992/wykres-800x600.gif" alt="">
+    </div>
+    <div class="dot mt-2">
+  
+        <h1 >W<span class="loader"></span></h1>
+    
+      </div>
+  
+  </div>
+
+  <!-- preloader end -->
+    <!-- backtop button -->
+    <div class="backtop"><i class="fas fa-angle-up"></i></div>
+    <!-- backtop button -->
+    <!-- nav get started login popup start -->
+    <div class="modal fade " id="exampleModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: fixed; z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;">
+        <div class="modal-dialog">
+            <div class="modal-content wow bounceIn" data-wow-duration="3s" data-wow-delay="0.2s" style="margin-top: 70px !important;">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title " style="color:#02073E ;" id="exampleModalLabel">Log In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 0px 80px 50px 80px !important;">
+                    <div class="row d-flex justify-content-center">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-12">
+                                <label for="validationCustom01" style="color: #ea3a60; font-weight: bold;"
+                                    class="form-label">Email</label>
+                                <input type="email" class="form-control" id="validationCustom01"
+                                    placeholder="Enter Your Email" style="border-radius: 50px;" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="validationCustom02" style="color: #ea3a60; font-weight: bold;"
+                                    class="form-label">Password</label>
+                                <input type="password" class="form-control" style="border-radius: 50px;"
+                                    id="validationCustom02" placeholder="Enter Your Pssword" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <div class="form-check col-lg-6" style="margin-left: 12px;">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
+                                        <label class="form-check-label" for="invalidCheck"
+                                            style="color:#02073E ; font-weight: bold;">
+                                            Remember Me?
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree before submitting.
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 text-end">
+                                        <a style="font-size: small;" href="">Forgot Password?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="col-lg-12 text-center loginbtn" type="submit">Submit form</button>
+                            </div>
+                            <div class="row text-center mt-3" style="font-weight: bold; color: #02073E;">
+                                <p>
+                                    Or Sign Up Using
+                                </p>
+
+                            </div>
+                            <div class="row mt-4">
+                                <ul class="d-flex justify-content-center form_social_icon">
+                                    <li style="background-color: 	#4267B2;"><a href=""><i
+                                                class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li style="margin-left:15px ; background-color: #1DA1F2;"><a href=""><i
+                                                class="fa-brands fa-twitter"></i></a></li>
+                                    <li style="margin-left:15px ;background-color: #db4a39;"><a href=""><i
+                                                class="fa-brands fa-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- nav get started login popup end -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon na_tgl fa-solid fa-bars" style="display: flex; justify-content: center; align-items: center; color: #ea3a60;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li style="margin-left:0 !important ;" class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item advertise_drop custom_dropdown">
+                        Advertise &nbsp; <i class="fa-solid fa-angle-down ad_drop_icon"></i>
+                        <ul class="ad_drop_items">
+                            <li>
+                                Advertise 1
+                            </li>
+                            <li>
+                                Advertise 2
+                            </li>
+                            <li>
+                                Advertise 3
+                            </li>
+                            <li>
+                                Advertise 4
+                            </li>
+                            <li>
+                                Advertise 5
+                            </li>
+                            <li>
+                                Advertise 6
+                            </li>
+                            <li>
+                                Advertise 6
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item support_drop custom_dropdown">
+                        Support &nbsp; <i class="fa-solid fa-angle-down support_drop_icon"></i>
+                        <ul class="support_drop_items">
+                            <li>
+                                Support 1
+                            </li>
+                            <li>
+                                Support 2
+                            </li>
+                            <li>
+                                Support 3
+                            </li>
+                            <li>
+                                Support 4
+                            </li>
+                            <li>
+                                Support 5
+                            </li>
+                            <li>
+                                Support 6
+                            </li>
+                            <li>
+                                Support 6
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+                <div class="get_started_btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Get Started
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- banner start -->
+    <div class="container-fluid banner_main_container">
+        <div class="container text-center " >
+            <div class="row d-flex justify-content-center wow bounceIn"data-wow-duration="5s" data-wow-delay="9s">
+                <div class="col-lg-8">
+                    <p class="bannerheader">
+                        Top Quality Digital Products To Explore
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-3 wow bounceIn"data-wow-duration="5s" data-wow-delay="9s">
+                <div class="col-lg-5">
+                    <p class="banner_txt">
+                        Get your blood tests delivered at let home collect sample from the victory of the managments
+                        that supplies
+                        best design system guidelines ever.
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-3 wow bounceInLeft" data-wow-duration="5s" data-wow-delay="9s">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <a href="">
+                        <div class="explore_btn">
+                            Explore
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-5 wow bounceInRight" data-wow-duration="5s" data-wow-delay="9s">
+                <div class="col-lg-10 d-flex justify-content-center">
+                    <a href=""><img src="images/Browser-mockup.png" class="img-fluid" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- meet the feature of product start -->
+    <!-- section header start -->
+    <div class="container section_header_container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+                <p class="red_txt text-center  bounceInLeft"data-wow-duration="3s" data-wow-delay="0.2s">
+                    Whats the function
+                </p>
+                <p class="header_main_txt text-center  bounceInRight"data-wow-duration="3s" data-wow-delay="0.2s">
+                    Meet the feature of product
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- section header end -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6  bounceInLeft"data-wow-duration="4s" data-wow-delay="0.2s">
+                <a href="">
+                    <div class="meet_the_feature_of_product_items">
+                        <img src="images/thundericon.png" alt="">
+                        <p class="feature_product_item_header">
+                            Fast Performance
+                        </p>
+                        <p class="feature_product_item_txt">
+                            Get your blood tests delivered at home collect a sample from the your blood tests.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6  bounceInLeft"data-wow-duration="3s" data-wow-delay="0.2s">
+                <a href="">
+                    <div class="meet_the_feature_of_product_items">
+                        <img src="images/partnerDealicon.png" alt="">
+                        <p class="feature_product_item_header">
+                            Partnership deal
+                        </p>
+                        <p class="feature_product_item_txt">
+                            Get your blood tests delivered at home collect a sample from the your blood tests.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6  bounceInRight"data-wow-duration="3s" data-wow-delay="0.2s">
+                <a href="">
+                    <div class="meet_the_feature_of_product_items">
+                        <img src="images/proSubscribeIcon.png" alt="">
+                        <p class="feature_product_item_header">
+                            Pro Subscription
+                        </p>
+                        <p class="feature_product_item_txt">
+                            Get your blood tests delivered at home collect a sample from the your blood tests.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6  bounceInRight"data-wow-duration="4s" data-wow-delay="0.2s">
+                <a href="">
+                    <div class="meet_the_feature_of_product_items">
+                        <img src="images/CustomerSupportIcon.png" alt="">
+                        <p class="feature_product_item_header">
+                            Customer Support
+                        </p>
+                        <p class="feature_product_item_txt">
+                            Get your blood tests delivered at home collect a sample from the your blood tests.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- meet the feature of product end -->
+    <!-- business goal start -->
+    <div class="container businessGoal_container">
+        <div class="row">
+            <div class="col-lg-6 bounceInRight" data-wow-duration="3s" data-wow-delay="0.2s">
+                <div class="businessgoal_vdo">
+                    <a class="my-video-links" data-autoplay="true" data-vbtype="video"
+                        href="https://youtu.be/ztTBARuU-gU">
+                        <div class="vdoplaybtn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </a>
+                    <img src="images/businessgoalWomen.png" style="border-radius: 10px;" class="img-fluid" alt="">
+                    <img src="images/businessgoalpattern.png" class="img-fluid b_goal_shape" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center  bounceInLeft"data-wow-duration="3s" data-wow-delay="0.2s">
+                <div class="business_goal_txt">
+                    <p class="b_goal_mini_red_txt">
+                        our services
+                    </p>
+                    <p class="businessgoalHeader">
+                        Business Goals <br>
+                        Achieved with Design
+                    </p>
+                    <div class="row mt-5">
+                        <div class="col-lg-1">
+                            <img src="images/smartfeatureiconBGOAL.png" class="b_goal_icon" alt="">
+                        </div>
+                        <div class="col-lg-8">
+                            <p class="business_goal_item_header">
+                                Smart Features
+                            </p>
+                            <p class="business_goal_item_txt">
+                                Get your blood tests delivered at let home collect sample from the victory of the
+                                managments.your blood tests.
+                            </p>
+
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-lg-1">
+                                <img src="images/SecureIconBGOAL.png" class="b_goal_icon" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="business_goal_item_header">
+                                    Secure Contents
+                                </p>
+                                <p class="business_goal_item_txt">
+                                    Get your blood tests delivered at let home collect sample from the victory of the
+                                    managments.your blood tests.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- business goal end -->
+    <!-- amazing useful feature start -->
+    <!-- section header start -->
+    <div class="container section_header_container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center ">
+                <p class="red_txt text-center bounceInRight"data-wow-duration="3s" data-wow-delay="0.2s">
+                    Quality features
+                </p>
+                <p class="header_main_txt text-center  bounceInLeft"data-wow-duration="3s" data-wow-delay="0.2s">
+                    Amazing useful features
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- section header end -->
+    <div class="container  bounceIn" data-wow-duration="3s" data-wow-delay="0.2s">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="row">
+                    <div class="col-lg-2 ">
+                        <img src="images/thundericon.png" alt="">
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="amazing_useful_item_header">
+                            Fast Performance
+                        </p>
+                        <p class="amazing_useful_item_txt">
+                            Let’s just get this out of the way - there will always be a kit version of Eduflow. Paid
+                            subscriptions allow us to continue helping learners around the world.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="row">
+                    <div class="col-lg-2 ">
+                        <img src="images/proSubscribeIcon.png" alt="">
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="amazing_useful_item_header">
+                            Pro Subscription
+                        </p>
+                        <p class="amazing_useful_item_txt">
+                            Let’s just get this out of the way - there will always be a kit version of Eduflow. Paid
+                            subscriptions allow us to continue helping learners around the world.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-6">
+                <div class="row">
+                    <div class="col-lg-2 ">
+                        <img src="images/partnerDealicon.png" alt="">
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="amazing_useful_item_header">
+                            Partnership deal
+                        </p>
+                        <p class="amazing_useful_item_txt">
+                            Let’s just get this out of the way - there will always be a kit version of Eduflow. Paid
+                            subscriptions allow us to continue helping learners around the world.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="row">
+                    <div class="col-lg-2 ">
+                        <img src="images/CustomerSupportIcon.png" alt="">
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="amazing_useful_item_header">
+                            Customer Support
+                        </p>
+                        <p class="amazing_useful_item_txt">
+                            Let’s just get this out of the way - there will always be a kit version of Eduflow. Paid
+                            subscriptions allow us to continue helping learners around the world.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- amazing useful feature end -->
+    <!-- smart jack pot start -->
+    <div class="container businessGoal_container">
+        <div class="row d-flex flex-row-reverse">
+            <div class="col-lg-6 bounceInLeft"data-wow-duration="3s" data-wow-delay="0.2s">
+                <div class="businessgoal_vdo" id="s_j_vdo">
+                    <a class="my-video-links" data-autoplay="true" data-vbtype="video"
+                        href="https://youtu.be/ztTBARuU-gU">
+                        <div class="vdoplaybtn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </a>
+                    <img src="images/smartjackpotwomen.png" style="border-radius: 10px;" class="img-fluid " id="s_j_vdo"
+                        alt="">
+                    <img src="images/smartjackpotpattern.png" class="img-fluid " id="s_j_pattern" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center  bounceInRight"data-wow-duration="3s" data-wow-delay="0.2s">
+                <div class="business_goal_txt">
+                    <p class="b_goal_mini_red_txt">
+                        CORE FEATURE
+                    </p>
+                    <p class="businessgoalHeader">
+                        Smart Jackpots that you may love this anytime & anywhere
+                    </p>
+                    <p class="smart_jackkpot_mini_txt col-lg-8 mt-5">
+                        Get your tests delivered at let home collect sample from the victory of the managments that
+                        supplies best design system guidelines ever.
+                    </p>
+                    <a href="">
+                        <div class="explore_btn">
+                            Get Started
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- smart jack pot end -->
+    <!-- lets see start -->
+    <div class="container-fluid lets_see_container">
+        <!-- section header start -->
+        <div class="container section_header_container" style=" padding-top: 50px !important;">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <p class="red_txt text-center text-white">
+                        WHATS THE FUNCTION
+                    </p>
+                    <p class="header_main_txt text-center text-white">
+                        Let’s see how it works
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- section header end -->
+        <div class="container">
+            <div class="row" style="padding-bottom: 70px;">
+                <div class="col-lg-3 col-md-6">
+                    <img src="images/no1.png" alt="">
+                    <p class="how_work_header">
+                        Set disbursement
+                        Instructions
+                    </p>
+                    <p class="how_work_txt">
+                        Get your blood tests delivered at home collect a sample from the your blood tests.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="images/no2.png" alt="">
+                    <p class="how_work_header">
+                        Assembly retrieves funds from your account
+                    </p>
+                    <p class="how_work_txt">
+                        Get your blood tests delivered at home collect a sample from the your blood tests.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="images/no3.png" alt="">
+                    <p class="how_work_header">
+                        Assembly initiates disbursement
+                    </p>
+                    <p class="how_work_txt">
+                        Get your blood tests delivered at home collect a sample from the your blood tests.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="images/no4.png" alt="">
+                    <p class="how_work_header">
+                        Customer receives funds payment
+                    </p>
+                    <p class="how_work_txt">
+                        Get your blood tests delivered at home collect a sample from the your blood tests.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- lets see end -->
+    <!-- pricing policy start -->
+    <!-- section header start -->
+    <div class="container section_header_container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+                <p class="red_txt text-center wow bounceInLeft"data-wow-duration="3s" data-wow-delay="0.2s">
+                    Quality features
+                </p>
+                <p class="header_main_txt text-center wow bounceInRight"data-wow-duration="3s" data-wow-delay="0.2s">
+                    Amazing useful features
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- section header end -->
+    <div class="container">
+        <div class="row d-flex justify-content-center pricing_tab_btn">
+            <ul class="nav  bounceInLeft  nav-pills mb-3 d-flex justify-content-between"data-wow-duration="3s" data-wow-delay="0.2s" id="pills-tab" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active tab_btn" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Monthly Plan</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab_btn" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Annual Plan</button>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="row tab_content mt-5 bounceIn "data-wow-duration="3s" data-wow-delay="0.2s">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="row d-flex justify-content">
+                        <div class="col-lg-4 col-md-6  col-sm-6 pmt" >
+                            <div class="pricing_items">
+                                <p class="pricing_item_header">
+                                    Free Plan
+                                </p>
+                                <p class="pricing_item_title">
+                                    For Small teams or office
+                                </p>
+                                <ul class="mt-4">
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; Drag & Drop Builder</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; 1,000's of Templates</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; Blog Support Tools</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; eCommerce Store </li>
+                                </ul>
+                                <div class="text-center mt-4  price_amount_time">
+
+                                    <p class="text-center">$0 <span>/Monthly</span></p>
+
+                                </div>
+
+                                <a class="mt-3 d-flex justify-content-center" href="">
+                                    <div class="price_plan_btn ">
+                                        Start free trial
+                                    </div>
+                                </a>
+                                <a style="color: transparent !important;"
+                                    class="mt-4 d-flex trial_txt justify-content-center" href="">
+                                    Or Start 14 Days trial
+                                </a>
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6  col-sm-6 pmt" >
+                            <div class="pricing_items">
+                                <p class="pricing_item_header">
+                                    Business king
+                                </p>
+                                <p class="pricing_item_title">
+                                    For Enterprise business
+                                </p>
+                                <ul class="mt-4">
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; Drag & Drop Builder</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; 1,000's of Templates</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; Blog Support Tools</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; eCommerce Store </li>
+                                </ul>
+                                <div class="text-center mt-4  price_amount_time">
+
+                                    <p class="text-center">$15 <span>/Monthly</span></p>
+
+                                </div>
+
+
+                                <div class="mt-3 d-flex justify-content-center">
+                                    <div class="price_plan_btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Create account
+                                    </div>
+                                </div>
+
+                                <a class="mt-4 d-flex trial_txt justify-content-center" href="">
+                                    Or Start 14 Days trial
+                                </a>
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6  col-sm-6 pmt" >
+                            <div class="pricing_items">
+                                <div class="suggested_bar">
+                                    <p><i class="fa-solid fa-crown"></i>&nbsp;Suggested</p>
+                                </div>
+                                <p class="pricing_item_header">
+                                    Pro Master
+                                </p>
+                                <p class="pricing_item_title">
+                                    For pro level developers
+                                </p>
+                                <ul class="mt-4">
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; Drag & Drop Builder</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; 1,000's of Templates</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; Blog Support Tools</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; eCommerce Store </li>
+                                </ul>
+                                <div class="text-center mt-4  price_amount_time">
+
+                                    <p class="text-center">$24 <span>/Monthly</span></p>
+
+                                </div>
+
+                                <div class="mt-3 d-flex justify-content-center">
+                                    <div class="price_plan_btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Create account
+                                    </div>
+                                </div>
+                                <a class="mt-4 d-flex trial_txt justify-content-center" href="">
+                                    Or Start 14 Days trial
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="row yearly_pakage">
+                        <div class="col-lg-4 col-md-6 col-sm-6 pmt">
+                            <div class="pricing_items">
+                                <p class="pricing_item_header">
+                                    Free Plan
+                                </p>
+                                <p class="pricing_item_title">
+                                    For Small teams or office
+                                </p>
+                                <ul class="mt-4">
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; Drag & Drop Builder</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; 1,000's of Templates</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; Blog Support Tools</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; eCommerce Store </li>
+                                </ul>
+                                <div class="text-center mt-4  price_amount_time">
+
+                                    <p class="text-center">$0 <span> /Yearly</span></p>
+
+                                </div>
+
+                                <a class="mt-3 d-flex justify-content-center" href="">
+                                    <div class="price_plan_btn ">
+                                        Start free trial
+                                    </div>
+                                </a>
+                                <a style="color: transparent !important;"
+                                    class="mt-4 d-flex trial_txt justify-content-center" href="">
+                                    Or Start 14 Days trial
+                                </a>
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 pmt">
+                            <div class="pricing_items">
+                                <div class="suggested_bar">
+                                    <p><i class="fa-solid fa-crown"></i>&nbsp;Suggested</p>
+                                </div>
+                                <p class="pricing_item_header">
+                                    Business king
+                                </p>
+                                <p class="pricing_item_title">
+                                    For Enterprise business
+                                </p>
+                                <ul class="mt-4">
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; Drag & Drop Builder</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; 1,000's of Templates</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; Blog Support Tools</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; eCommerce Store </li>
+                                </ul>
+                                <div class="text-center mt-4  price_amount_time">
+
+                                    <p class="text-center">$100 <span> /Yearly</span></p>
+
+                                </div>
+
+
+                                <div class="mt-3 d-flex justify-content-center">
+                                    <div class="price_plan_btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Create account
+                                    </div>
+                                </div>
+
+                                <a class="mt-4 d-flex trial_txt justify-content-center" href="">
+                                    Or Start 14 Days trial
+                                </a>
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 pmt">
+                            <div class="pricing_items">
+                                <div class="suggested_bar">
+                                    <p><i class="fa-solid fa-crown"></i>&nbsp;Suggested</p>
+                                </div>
+                                <p class="pricing_item_header">
+                                    Pro Master
+                                </p>
+                                <p class="pricing_item_title">
+                                    For pro level developers
+                                </p>
+                                <ul class="mt-4">
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; Drag & Drop Builder</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; 1,000's of Templates</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; Blog Support Tools</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> &nbsp; eCommerce Store </li>
+                                </ul>
+                                <div class="text-center mt-4  price_amount_time">
+
+                                    <p class="text-center">$450 <span> /Yearly</span></p>
+
+                                </div>
+
+                                <div class="mt-3 d-flex justify-content-center">
+                                    <div class="price_plan_btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Create account
+                                    </div>
+                                </div>
+                                <a class="mt-4 d-flex trial_txt justify-content-center" href="">
+                                    Or Start 14 Days trial
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pricing policy end -->
+
+    <!-- our team start -->
+    <!-- section header start -->
+    <div class="container section_header_container"> 
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+                <p class="red_txt text-center  bounceInRight"data-wow-duration="3s" data-wow-delay="0.2s">
+                    our team
+                </p>
+                <p class="header_main_txt text-center wow bounceInLeft"data-wow-duration="3s" data-wow-delay="0.2s">
+                    The most qualified and talented individuals
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- section header end -->
+
+
+    <div class="container test_container">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6  bounceInLeft"data-wow-duration="5s" data-wow-delay="0.2s">
+                <div class="team_box">
+                    <div class="member_img">
+                        <img src="images/owner favicon.jpg" alt="" class="img-fluid">
+                    </div>
+                    <p class="mt-3 member_name">
+                        Hamza ALtamas
+                    </p>
+                    <p class="mt-2 member_designation">
+                        CEO and Founder
+                    </p>
+                    <ul class="team_icon">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li style="margin-top: 5px;"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li style="margin-top: 5px;"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  bounceInLeft"data-wow-duration="4s" data-wow-delay="0.2s">
+                <div class="team_box">
+                    <div class="member_img">
+                        <img src="images/owner favicon.jpg" alt="" class="img-fluid">
+                    </div>
+                    <p class="mt-3 member_name">
+                        Hamza ALtamas
+                    </p>
+                    <p class="mt-2 member_designation">
+                        Web Developer
+                    </p>
+                    <ul class="team_icon">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li style="margin-top: 5px;"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li style="margin-top: 5px;"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  bounceInLeft"data-wow-duration="3s" data-wow-delay="0.2s">
+                <div class="team_box">
+                    <div class="member_img">
+                        <img src="images/owner favicon.jpg" alt="" class="img-fluid">
+                    </div>
+                    <p class="mt-3 member_name">
+                        Hamza ALtamas
+                    </p>
+                    <p class="mt-2 member_designation">
+                        Web Designer
+                    </p>
+                    <ul class="team_icon">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li style="margin-top: 5px;"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li style="margin-top: 5px;"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-lg-4 col-md-6 col-sm-6  bounceInRight" data-wow-duration="3s" data-wow-delay="0.2s">
+                <div class="team_box">
+                    <div class="member_img">
+                        <img src="images/owner favicon.jpg" alt="" class="img-fluid">
+                    </div>
+                    <p class="mt-3 member_name">
+                        Hamza ALtamas
+                    </p>
+                    <p class="mt-2 member_designation">
+                        Web Designer
+                    </p>
+                    <ul class="team_icon">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li style="margin-top: 5px;"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li style="margin-top: 5px;"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  bounceInRight" data-wow-duration="4s" data-wow-delay="0.2s">
+                <div class="team_box">
+                    <div class="member_img">
+                        <img src="images/owner favicon.jpg" alt="" class="img-fluid">
+                    </div>
+                    <p class="mt-3 member_name">
+                        Hamza ALtamas
+                    </p>
+                    <p class="mt-2 member_designation">
+                        Web Designer
+                    </p>
+                    <ul class="team_icon">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li style="margin-top: 5px;"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li style="margin-top: 5px;"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  bounceInRight" data-wow-duration="5s" data-wow-delay="0.2s">
+                <div class="team_box">
+                    <div class="member_img">
+                        <img src="images/owner favicon.jpg" alt="" class="img-fluid">
+                    </div>
+                    <p class="mt-3 member_name">
+                        Hamza ALtamas
+                    </p>
+                    <p class="mt-2 member_designation">
+                        Web Designer
+                    </p>
+                    <ul class="team_icon">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li style="margin-top: 5px;"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li style="margin-top: 5px;"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our team end -->
+    <!-- testimonial start -->
+    <!-- section header start -->
+    <div class="container section_header_container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+                <p class="red_txt text-center  bounceInLeft"data-wow-duration="3s" data-wow-delay="0.2s">
+                    testimonial
+                </p>
+                <p class="header_main_txt text-center  bounceInRight"data-wow-duration="3s" data-wow-delay="0.2s">
+                    Meet Client Satisfaction
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- section header end -->
+
+    <div class="container test_container  bounceIn"data-wow-duration="3s" data-wow-delay="0.2s">
+        <div class="slidebtn nextv">
+
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="slidebtn  prevv">
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="row test_slider">
+            <div class="col-lg-4">
+                <div class="testimonial_box">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i style="color: #d1d1d1;" class="fa-solid fa-star"></i> <br>
+                    <p class="test_heading mt-2">
+                        Modern look & trending design
+                    </p>
+                    <p class="test_txt">
+                        Get working experience to work with this amazing team & in future want to work together
+                        for
+                        bright future projects and also make deposit to freelancer.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-lg-3">
+                            <div class="test_img">
+                                <img src="images/owner favicon.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="test_name">
+                                Hamza Altamas
+                            </p>
+                            <a href="">
+                                <p class="text_mail">
+                                    @hamza.hil
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial_box">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i style="color: #d1d1d1;" class="fa-solid fa-star"></i> <br>
+                    <p class="test_heading mt-2">
+                        Design Quality & performance
+                    </p>
+                    <p class="test_txt">
+                        Get working experience to work with this amazing team & in future want to work together
+                        for
+                        bright future projects and also make deposit to freelancer.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-lg-3">
+                            <div class="test_img">
+                                <img src="images/owner favicon.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="test_name">
+                                Hamza Altamas
+                            </p>
+                            <a href="">
+                                <p class="text_mail">
+                                    @hamza.hil
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial_box">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i style="color: #d1d1d1;" class="fa-solid fa-star"></i> <br>
+                    <p class="test_heading mt-2">
+                        Layout and organized layers
+                    </p>
+                    <p class="test_txt">
+                        Get working experience to work with this amazing team & in future want to work together
+                        for
+                        bright future projects and also make deposit to freelancer.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-lg-3">
+                            <div class="test_img">
+                                <img src="images/owner favicon.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="test_name">
+                                Hamza Altamas
+                            </p>
+                            <a href="">
+                                <p class="text_mail">
+                                    @hamza.hil
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial_box">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i style="color: #d1d1d1;" class="fa-solid fa-star"></i> <br>
+                    <p class="test_heading mt-2">
+                        Design Quality & performance
+                    </p>
+                    <p class="test_txt">
+                        Get working experience to work with this amazing team & in future want to work together
+                        for
+                        bright future projects and also make deposit to freelancer.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-lg-3">
+                            <div class="test_img">
+                                <img src="images/owner favicon.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="test_name">
+                                Hamza Altamas
+                            </p>
+                            <a href="">
+                                <p class="text_mail">
+                                    @hamza.hil
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial_box">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i style="color: #d1d1d1;" class="fa-solid fa-star"></i> <br>
+                    <p class="test_heading mt-2">
+                        Modern look & trending design
+                    </p>
+                    <p class="test_txt">
+                        Get working experience to work with this amazing team & in future want to work together
+                        for
+                        bright future projects and also make deposit to freelancer.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-lg-3">
+                            <div class="test_img">
+                                <img src="images/owner favicon.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="test_name">
+                                Hamza Altamas
+                            </p>
+                            <a href="">
+                                <p class="text_mail">
+                                    @hamza.hil
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial_box">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i style="color: #d1d1d1;" class="fa-solid fa-star"></i> <br>
+                    <p class="test_heading mt-2">
+                        Design Quality & performance
+                    </p>
+                    <p class="test_txt">
+                        Get working experience to work with this amazing team & in future want to work together
+                        for
+                        bright future projects and also make deposit to freelancer.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-lg-3">
+                            <div class="test_img">
+                                <img src="images/owner favicon.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="test_name">
+                                Hamza Altamas
+                            </p>
+                            <a href="">
+                                <p class="text_mail">
+                                    @hamza.hil
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonial end -->
+    <!-- our blog start -->
+    <!-- section header start -->
+    <div class="container section_header_container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+                <p class="red_txt text-center  bounceInRight"data-wow-duration="3s" data-wow-delay="0.2s">
+                    our blog
+                </p>
+                <p class="header_main_txt text-center  bounceInLeft"data-wow-duration="3s" data-wow-delay="0.2s">
+                    Explore our products for your business solution
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- section header end -->
+    <div class="container blog_container  bounceInLeft"data-wow-duration="3s" data-wow-delay="0.2s">
+        <div class="slidebtn nextvv">
+
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="slidebtn  prevvv">
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="row blog_slider">
+            <div class="col-lg-4">
+                <div class="blog_item">
+                    <div class="blog_img">
+                        <img src="images/blogWomen.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="blog_txt">
+                        <p class="blog_txt_header">
+                            Product Marketing: Monopoly
+                            Market
+                        </p>
+                        <div class="row d-flex justify-content-between">
+                            <p class="bloger_name col-lg-6">
+                                James Carter
+                            </p>
+
+                            <p class="blog_date col-lg-6 d-flex justify-content-end">
+                                Sep 20, 2019
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog_item">
+                    <div class="blog_img">
+                        <img src="images/blogWomen.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="blog_txt">
+                        <p class="blog_txt_header">
+                            Product Marketing: Creative <br>
+                            Market
+                        </p>
+                        <div class="row d-flex justify-content-between">
+                            <p class="bloger_name col-lg-6">
+                                James Carter
+                            </p>
+
+                            <p class="blog_date col-lg-6 d-flex justify-content-end">
+                                Sep 20, 2019
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog_item">
+                    <div class="blog_img">
+                        <img src="images/blogWomen.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="blog_txt">
+                        <p class="blog_txt_header">
+                            Product Marketing: Startup
+                            Product Sales
+                        </p>
+                        <div class="row d-flex justify-content-between">
+                            <p class="bloger_name col-lg-6">
+                                James Carter
+                            </p>
+
+                            <p class="blog_date col-lg-6 d-flex justify-content-end">
+                                Sep 20, 2019
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog_item">
+                    <div class="blog_img">
+                        <img src="images/blogWomen.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="blog_txt">
+                        <p class="blog_txt_header">
+                            Product Marketing: Monopoly
+                            Market
+                        </p>
+                        <div class="row d-flex justify-content-between">
+                            <p class="bloger_name col-lg-6">
+                                James Carter
+                            </p>
+
+                            <p class="blog_date col-lg-6 d-flex justify-content-end">
+                                Sep 20, 2019
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog_item">
+                    <div class="blog_img">
+                        <img src="images/blogWomen.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="blog_txt">
+                        <p class="blog_txt_header">
+                            Product Marketing: Startup
+                            Product Sales
+                        </p>
+                        <div class="row d-flex justify-content-between">
+                            <p class="bloger_name col-lg-6">
+                                James Carter
+                            </p>
+
+                            <p class="blog_date col-lg-6 d-flex justify-content-end">
+                                Sep 20, 2019
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- our blog end -->
+    <!-- subscribe blog start -->
+    <div class="container-fluid sub_blog_container">
+        <div class="container ">
+            <div class="row d-flex justify-content-center">
+                <p class="sub_blog_header text-center">
+                    Subscribe to our Blog
+                </p>
+            </div>
+            <div class="row  d-flex justify-content-center">
+                <p class="sub_blog_txt col-lg-6 text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor incididunt labore dolore.
+                </p>
+            </div>
+            <div class="row mt-3 d-flex justify-content-center">
+                <div class="col-lg-7">
+                    <div class="row">
+                        <form action="" style="width: 100%; position: relative;">
+                            <input class="sub_input" type="text" placeholder="Enter your email address...">
+                            <a href="" class="sub_btn_ancor">
+                                <div class="subbtn">
+                                    Subscribe
+                                </div>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- subscribe blog end -->
+    <!-- faq start -->
+      <!-- section header start -->
+      <div class="container section_header_container ">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+                <p class="red_txt text-center  bounceInLeft" data-wow-duration="3s" data-wow-delay="0.2s">
+                    FAQ
+                </p>
+                <p class="header_main_txt text-center  bounceInRight"data-wow-duration="3s" data-wow-delay="0.2s">
+                    Frequently Asked Questions
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- section header end -->
+    <div class="container collaps_container  bounceIn"data-wow-duration="3s" data-wow-delay="0.2s" >
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header accordion-header1" id="headingOne">
+                <button class="accordion-button d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    01. Which domain should I purchase?
+                    <p style=" margin-bottom: 0 !important; font-size: 30px;" id="minus"  class="fas fa-chevron-circle-up">  </p>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header accordion-header2" id="headingTwo">
+                <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    02. What are some tips when choosing a name?
+                    <p style=" margin-bottom: 0 !important; font-size: 30px;" id="minus1"  class="fas fa-chevron-circle-down">  </p>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header accordion-header3" id="headingThree">
+                <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    03. What if I need help choosing the right domain?
+                    <p style=" margin-bottom: 0 !important; font-size: 30px;" id="minus3"  class="fas fa-chevron-circle-down">  </p>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header accordion-header4" id="headingFour">
+                <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    04. Can I upgrade or downgrade my web hosting subscription system?
+                    <p style=" margin-bottom: 0 !important; font-size: 30px;" id="minus4"  class="fas fa-chevron-circle-down">  </p>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header accordion-header5" id="headingFive">
+                <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    05. Learn from community on Brandwagon
+                    <p style=" margin-bottom: 0 !important; font-size: 30px;" id="minus5"  class="fas fa-chevron-circle-down">  </p>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- faq end -->
+    <!-- communication part start -->
+    <div class="container" style="margin-top: 100px; padding-bottom: 100px; border-bottom: 1px solid #d1d1d1;">
+        <div class="row">
+            <div class="col-lg-4 wow bounceInLeft"data-wow-duration="3s" data-wow-delay="0.2s">
+                <div class="communication_item text-center ">
+                    <img  src="images/joinCommunityIcon.png" class="mb-3 img-fluid" alt="">
+                    <a href="" >
+                        <p class="communication_header">
+                            Join the Community
+                        </p>
+                    </a>
+                    <div class="row d-flex justify-content-center">
+                        <p class="communication_txt col-lg-8 text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow bounceIn"data-wow-duration="3s" data-wow-delay="0.2s">
+                <div class="communication_item text-center ">
+                    <img  src="images/chatCommunicationIcon.png" class="mb-3 img-fluid" alt="">
+                    <a href="" >
+                        <p class="communication_header">
+                            Chat Communication
+                        </p>
+                    </a>
+                    <div class="row d-flex justify-content-center">
+                        <p class="communication_txt col-lg-8 text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow bounceInRight"data-wow-duration="3s" data-wow-delay="0.2s">
+                <div class="communication_item text-center ">
+                    <img  src="images/githubaccessicon.png" class="mb-3 img-fluid" alt="">
+                    <a href="" >
+                        <p class="communication_header">
+                            Github Access
+                        </p>
+                    </a>
+                    <div class="row d-flex justify-content-center">
+                        <p class="communication_txt col-lg-8 text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- communication part end -->
+    <!-- footer start -->
+    <div class="container  bounceIn"data-wow-duration="3s" data-wow-delay="0.2s" style="margin-top: 50px; padding-bottom: 300px;">
+         <div class="row d-flex justify-content-center">
+            <div class="footer_img d-flex justify-content-center">
+                <img src="images/footerlogo.png" alt="">
+            </div>
+         </div>
+         <div class="row mt-4 d-flex justify-content-center">
+            <ul class="d-flex justify-content-center footer_nav col-lg-7">
+                <li style="margin-left: 0 !important;"><a href="">Home</a></li>
+                <li><a href="">Advertise</a></li>
+                <li><a href="">Supports</a></li>
+                <li><a href="">Marketing</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+         </div>
+         <div class="row d-flex justify-content-center mt-4">
+             <div class="copyright d-flex justify-content-center">
+               Figma to HTML by&nbsp;<span>Hamza Altamas</span>
+             </div>
+
+         </div>
+    </div>
+    <!-- footer end -->
+
+    <div class="" style="height: 1000px;"></div>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/jquery.preloadinator.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/script.js"></script>
+  
+</body>
+
+</html>

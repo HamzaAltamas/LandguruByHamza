@@ -311,7 +311,7 @@ ol {
   padding: 10px 0;
   background-color: #ea3a60;
   font-weight: bold;
-  width:100%;
+  width:100%  !important;
   color: #fff;
   border: none;
   border-radius: 50px;

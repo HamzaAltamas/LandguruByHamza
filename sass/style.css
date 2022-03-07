@@ -1910,9 +1910,9 @@ margin-left: 100px;
           width: 100%;
 
         }
-      .bannerheader{
-        font-size:35px;
-  }
+      .banner_main_container .bannerheader{
+        font-size:35px !important;
+      }
         .slick-center{
           transform: scale(1) !important;
           -webkit-transform: scale(1) !important;

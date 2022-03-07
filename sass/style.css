@@ -212,7 +212,7 @@ ol {
   -webkit-box-shadow: 10px 10px 30px #3f3f3f;
           box-shadow: 10px 10px 30px #3f3f3f;
   z-index: 99999;
-  bottom: 100px;
+  bottom: 70px;
   cursor: pointer;
 }
 
